@@ -2,7 +2,7 @@ body {
     font-family: Arial, serif;
     margin: 0;
     font-size: 14px;
-    background-color: #292F36;
+    background-color: #2e282a;
     color: black;
     padding: 0;
     height: 100%;
@@ -38,8 +38,8 @@ a:visited {
 /* Header & Nav*/
 .letterhead {
     box-shadow: -1px 5px 7px 3px rgba(0,0,0,0.12);
-    background-color: #4ecdc4;
-    color: white;
+    background-color: #17bebb;
+    color: #2e282a;
     align-items: center;
     display: flex;
     position: absolute;

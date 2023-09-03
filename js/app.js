@@ -11,10 +11,10 @@ var delta;
 var runTime = 0.0;
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
-var wedgeColorA = '#ffe66d';
-var wedgeColorB = '#ff6b6b';
-var wedgeColorC = '#f7fff7';
-var wedgeColorD = '#4ecdc4';
+var wedgeColorA = '#e4572e';
+var wedgeColorB = '#17bebb';
+var wedgeColorC = '#ffc914';
+var wedgeColorD = '#76b041';
 var wedgeSubdiv;
 var wheelRotation = 90;
 var rotationSpeed = 0;
@@ -225,7 +225,7 @@ function loop() {
     y = CANVAS_MID_Y + Math.sin(degRad(wedgeRotation)) * WHEEL_RADIUS;
     context.moveTo(CANVAS_MID_X, CANVAS_MID_Y);
 
-    strokeColor('#292F36');
+    strokeColor('#2e282a');
     switch (i % 3) {
       case 0:
         fillColor(wedgeColorA);
@@ -252,7 +252,7 @@ function loop() {
     wedgeRotation = (i * wedgeSubdiv + wheelRotation) + wedgeSubdiv / 2;
     context.textAlign = 'center';
     context.font = canvas.width / (is_mobile ? 18 : 24) + 'px Josefin Sans';
-    fillColor('#000000');
+    fillColor('#2e282a');
     context.save();
     context.translate(
         CANVAS_MID_X + Math.cos(degRad(wedgeRotation)) * (WHEEL_RADIUS * wedge_text_position),
@@ -263,7 +263,7 @@ function loop() {
     context.restore();
   }
 
-  fillColor('#000000');
+  fillColor('#2e282a');
   context.beginPath();
   context.moveTo(CANVAS_MID_X + canvas.width / 32, canvas.height / 64);
   context.lineTo(CANVAS_MID_X - canvas.width / 32, canvas.height / 64);
@@ -274,7 +274,7 @@ function loop() {
     context.beginPath();
     context.textAlign = 'center';
     context.font = canvas.width / (is_mobile ? 18 : 24) + 'px Josefin Sans';
-    fillColor('#F7FFF7');
+    fillColor('#2e282a');
     context.fillText(blank_message, CANVAS_MID_X, CANVAS_MID_Y);
   } else {
     context.beginPath();
